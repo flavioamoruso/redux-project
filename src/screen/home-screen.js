@@ -1,7 +1,8 @@
 import React from "react";
 import Layout from "../components/layout";
-import { Box, Container, Stack, InputWrapper } from "../components/styled";
+import { Box, Container, Stack, InputWrapper, Button } from "../components/styled";
 import Skeleton from "../components/styled/Skeleton";
+import { ThemeProvider } from "styled-components";
 
 const HomePage = () => {
   return (
@@ -41,7 +42,13 @@ const HomePage = () => {
       <Box mt='90px' mb='90px'>
         <InputWrapper placeholder="Inserisci"/>
       </Box>
-      <Skeleton width='300px' height='50px'/>
+      <Skeleton width='200px' height='100px' borderRadius='16px' variant="circle" ></Skeleton>
+      <Stack spacing='24px' mt='80px' align='center'>
+        <Button size='xl' variant='container'>bottone 1</Button>
+        <Button size='md' variant='outlined'>bottone 2</Button>
+        <Button size='sm' variant='text'>bottone 3</Button>
+        <Button size='xl' variant='disabled'>bottone 4</Button>
+      </Stack>
     </Container>
     </Layout>
     );

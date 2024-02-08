@@ -2,7 +2,6 @@ import React from "react";
 import Box from "./Box";
 import styled, { keyframes } from "styled-components";
 import { variant } from "styled-system";
-import Container from "./Container";
 
 const waveKeyframe = keyframes`
   0% {
@@ -51,7 +50,7 @@ const SkeletonBox = styled(WaveBox)(
 );
 
 SkeletonBox.defaultProps = {
-  backgroundColor: `grey.500`,
+  backgroundColor: `grey`,
 };
 
 const Skeleton = ({ variant = "rect", ...rest }) => {
