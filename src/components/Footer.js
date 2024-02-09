@@ -4,8 +4,23 @@ import { Container, Stack, Box } from "./styled";
 
 const Footer = () => {
   return (
-    <Container size='xl' m='auto'>
-      <h5>Footer</h5>
+    <Container size='fullwidth' mt={['36px','96px']}>
+      <Container>
+        <Stack width='100%' justify='flex-start'>
+          <Stack align='start' spacing='20px'>
+          <Box>
+            <Logo/>
+          </Box>
+          <Stack direction="column" align='start' height='100%' spacing='20px'>
+            <Box>pick me</Box>
+            <Box color="grey.100">
+              Lorem ipsum dolor.
+            </Box>
+          </Stack>
+          </Stack>
+        </Stack>
+      </Container>
+      
     </Container>
   )
 };
